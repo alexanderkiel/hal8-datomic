@@ -97,4 +97,27 @@ Work: University Leipzig
 * Diese Trennung ist nur moeglich, weil Update-In-Place nicht mehr verwendet
   wird.
 
-#
+# Konzepte
+
+* Value: immutable, magnitude, quantity, number or immutable composite thereof
+* Identity: Eine gedachte Entitaet die mit einer Serie von kausal zusammenhaengenden Werten (Zustaenden) assoziiert wird.
+* State: value of an identity at a moment in time
+* Time: relative ordering of states.
+
+# Epochal Time Model
+
+* aus vortrag
+
+# Values
+
+* Werte sind als persistente Datenstrukturen implementiert.
+* Persistente Datenstrukturen basieren aus Baeumen.
+* Strctural Sharing wird verwendet.
+* Jede Transaktion ueberfuehrt einen Wert in einen neuen Wert.
+
+# Place Model
+
+# Epochal Time Model
+
+
+

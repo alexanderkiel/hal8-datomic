@@ -7,7 +7,7 @@
 (def conn (d/connect "datomic:mem://hal8"))
 
 ;; our database schema is a data structure
-(def schema [{:db/id (d/tempid :db.part/db )
+(def schema [{:db/id #db/id[:db.part/db]
               :db/ident :author/email
               :db/valueType :db.type/string
               :db/cardinality :db.cardinality/one

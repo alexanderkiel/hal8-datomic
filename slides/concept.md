@@ -108,16 +108,33 @@ Work: University Leipzig
 
 * aus vortrag
 
-# Values
+# Value Implementation
 
 * Werte sind als persistente Datenstrukturen implementiert.
 * Persistente Datenstrukturen basieren aus Baeumen.
 * Strctural Sharing wird verwendet.
 * Jede Transaktion ueberfuehrt einen Wert in einen neuen Wert.
 
-# Place Model
+# Database State
 
-# Epochal Time Model
+* Die Datenbank ist ein Value der immer waechst.
+* Es wird nichts vergessen.
+* Die Vergangenheit aendert sich nicht.
+* Jede Transaktion, fuehrt zu neuen Daten und braucht damit neuen Speicherplatz.
+* Das steht im Gegensatz zu place oriented Datenbanken, die Speicher
+  ueberschreiben.
 
+# Accretion
 
+*
+
+# Information Model
+
+# Process/Transactions
+
+* Transaktionen sind greifbar. Jeder Fakt verweist auf die Transaktion, in der
+  er hinzugefuegt wurde.
+* Transaktionen sind normale Entitaeten zu denen beliebige Attribute gespeichert
+  werden koennen.
+* Minimale Aenderungen durch atomare Fakten.
 
